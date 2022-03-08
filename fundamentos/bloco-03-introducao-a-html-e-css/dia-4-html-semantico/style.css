@@ -1,0 +1,25 @@
+header{
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.527);
+    margin: 0px;
+}
+#navegacao{
+    word-spacing: 4px;
+}
+#artigo{
+    background-color: rgba(245, 245, 245, 0.527);
+    width: 80%;
+    padding: 10px;
+}
+table{
+margin: auto;
+}
+#artigo, aside{
+    display: inline-block;
+}
+aside{
+    float: right;
+    margin-right: 40px;
+    background-color: rgba(245, 245, 245, 0.527);
+    padding: 10px;
+}
