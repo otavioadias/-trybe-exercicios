@@ -3,4 +3,6 @@ let numbers = [];
 for (let index = 1; index <= 25; index++){
     numbers.push(index);
 }
-console.log(numbers);
+for (let index1 = 0; index1 < numbers.length; index1++){
+    console.log(numbers[index1]/2)
+}
