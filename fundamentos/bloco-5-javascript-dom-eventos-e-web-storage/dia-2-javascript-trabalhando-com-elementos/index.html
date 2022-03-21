@@ -94,5 +94,11 @@
             numbersList.innerHTML = numbers[num];
             list.appendChild(numbersList);
         }
+
+        for (let index = 0; index <= 2; index += 1) {
+            const tagsH3 = document.createElement('h3');
+            tagsH3.innerHTML = "Tags" + index;
+            createMain.appendChild(tagsH3);
+        }
   </body>
 </html>
