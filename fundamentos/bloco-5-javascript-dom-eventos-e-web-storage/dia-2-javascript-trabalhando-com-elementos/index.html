@@ -104,7 +104,13 @@
 
       const newTitle = document.querySelector('h1');
       newTitle.className = 'title';
+
+      const classH3 = document.getElementsByTagName('h3');
+      for (let index = 0; index < 3; index += 1) {
+          classH3[index].className = 'description';
+      }
       
+    
     </script>
   </body>
 </html>
