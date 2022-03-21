@@ -84,6 +84,14 @@
         stringsUp.innerHTML = stringsUp.innerHTML.toUpperCase();
       }
       toUpper();
+
+      function show() {
+        let showConsole = document.getElementsByTagName('p');
+        for (let index = 0; index < showConsole.length; index += 1) {
+          console.log(showConsole);
+        }
+      }
+      show();
     </script>
   </body>
 </html>
