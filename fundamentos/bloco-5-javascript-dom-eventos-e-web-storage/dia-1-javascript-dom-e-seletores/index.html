@@ -56,10 +56,18 @@
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
       function change() {
-        let paragraph = document.getElementsByTagName("p")[1];
+        let paragraph = document.getElementsByTagName('p')[1];
         paragraph.innerText = "Eu me vejo atuando como programnador em uma boa empresa.";
       }
       change();
+
+      function changeColor() {
+        let colorTrybe = document.getElementsByClassName('main-content')[0];
+        colorTrybe.style.background = "rgb(76,164,109)";
+      }
+      changeColor();
+
+      
     </script>
   </body>
 </html>
