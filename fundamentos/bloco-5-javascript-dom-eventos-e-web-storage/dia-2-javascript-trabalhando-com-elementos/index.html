@@ -76,5 +76,14 @@
         const createLeftSection = document.createElement('section');
         createLeftSection.className = 'left-content';
         createMain.appendChild(createLeftSection);
+
+        const createRightSection = document.createElement('section');
+        createRightSection.className = 'right-content';
+        createMain.appendChild(createRightSection);
+
+        const createImage = document.createElement('img');
+        createImage.className = 'small-image';
+        createImage.src = "https://picsum.photos/200";
+        createLeftSection.appendChild(createImage);
   </body>
 </html>
