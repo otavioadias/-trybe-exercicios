@@ -57,48 +57,54 @@
   </head>
   <body>
     <script>
-        const createH1 = document.createElement('h1');
-        createH1.innerText = 'Exercício 5.2 - JavaScript DOM';
-        document.body.appendChild(createH1);
+      const createH1 = document.createElement('h1');
+      createH1.innerText = 'Exercício 5.2 - JavaScript DOM';
+      document.body.appendChild(createH1);
 
-        const createMain = document.createElement('main');
-        createMain.className = 'main-content';
-        document.body.appendChild(createMain);
-        
-        const createSection = document.createElement('section');
-        createSection.className = 'center-content';
-        createMain.appendChild(createSection);
+      const createMain = document.createElement('main');
+      createMain.className = 'main-content';
+      document.body.appendChild(createMain);
 
-        const createParagraph = document.createElement('p');
-        createParagraph.innerText = "Texto exercício 4";
-        createSection.appendChild(createParagraph);
-        
-        const createLeftSection = document.createElement('section');
-        createLeftSection.className = 'left-content';
-        createMain.appendChild(createLeftSection);
+      const createSection = document.createElement('section');
+      createSection.className = 'center-content';
+      createMain.appendChild(createSection);
 
-        const createRightSection = document.createElement('section');
-        createRightSection.className = 'right-content';
-        createMain.appendChild(createRightSection);
+      const createParagraph = document.createElement('p');
+      createParagraph.innerHTML = "Texto exercício 4";
+      createSection.appendChild(createParagraph);
 
-        const createImage = document.createElement('img');
-        createImage.className = 'small-image';
-        createImage.src = "https://picsum.photos/200";
-        createLeftSection.appendChild(createImage);
+      const createLeftSection = document.createElement('section');
+      createLeftSection.className = 'left-content';
+      createMain.appendChild(createLeftSection);
 
-        const list = document.createElement('ul');
-        createRightSection.appendChild(list);
-        const numbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
-        for (let num in numbers) {
-            const numbersList - document.create('li');
-            numbersList.innerHTML = numbers[num];
-            list.appendChild(numbersList);
-        }
+      const createRightSection = document.createElement('section');
+      createRightSection.className = 'right-content';
+      createMain.appendChild(createRightSection);
 
-        for (let index = 0; index <= 2; index += 1) {
-            const tagsH3 = document.createElement('h3');
-            tagsH3.innerHTML = "Tags" + index;
-            createMain.appendChild(tagsH3);
-        }
+      const createImage = document.createElement('img');
+      createImage.className = 'small-image';
+      createImage.src = "https://picsum.photos/200";
+      createLeftSection.appendChild(createImage);
+
+      const list = document.createElement('ul');
+      createRightSection.appendChild(list);
+      const numbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']
+      for (let index1 = 0; index1 < numbers.length; index1 += 1) {
+        const numbersArray = numbers[index1];  
+        const numbersList = document.createElement('li');
+        numbersList.innerText = numbersArray;
+        list.appendChild(numbersList);
+      }
+
+      for (let index = 0; index <= 2; index += 1) {
+          const tagsH3 = document.createElement('h3');
+          tagsH3.innerHTML = "Tags h3" + index;
+          createMain.appendChild(tagsH3);
+      }
+
+      const newTitle = document.querySelector('h1');
+      newTitle.className = 'title';
+      
+    </script>
   </body>
 </html>
