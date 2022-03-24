@@ -5,14 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Concurso TrybeTrip</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>Concurso TrybeTrip</header>
+    <fieldset>
     <form action="" method="post">
         <label for="input-name"> Nome: 
-            <input type="text" name="nome" id="input-name" placeholder="Digite seu nome" required>
+            <input type="text" name="nome" id="input-name" placeholder="Digite seu nome" min="10" max="40" required>
         </label>
-        
+        <br><br>
+        <label for="input-email"> E-mail: 
+            <input type="email" name="email" id="input-email" placeholder="Digite seu e-mail" min="10" max="50" required>
+        </label>
+        <br><br>
+        <p>Destino Preferido</p>
+        <label for="input-opcao1">
+            <input type="radio" name="destiny-option" id="input-opcao1" value="Cidade"> Cidade
+        </label>
+        <label for="input-opcao2">
+            <input type="radio" name="destiny-option" id="input-opcao2" value="Campo"> Campo
+        </label>
+        <label for="input-opcao3">
+            <input type="radio" name="destiny-option" id="input-opcao3" value="Praia"> Praia
+        </label>
+        <label for="input-opcao4">
+            <input type="radio" name="destiny-option" id="input-opcao4" value="Montanhas"> Montanhas
+        </label>
+        <br><br>
     </form>
+    <script src="script.js"></script>
 </body>
 </html>
